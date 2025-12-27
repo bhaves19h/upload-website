@@ -24,7 +24,7 @@ function uploadVideos() {
   const xhr = new XMLHttpRequest();
 
   // ✅ USE PC IP (NOT localhost)
-  xhr.open("POST", "http://10.38.222.228:5000/api/videos/upload");
+  xhr.open("POST", "https://video-ott-backend.onrender.com/api/videos/upload");
 
   // 🔄 REAL PROGRESS
   xhr.upload.onprogress = function (e) {
